@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #E4DAEB;
+}
+.card-color1 {
+    background-color: #301934;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden; /* Ensure any overflow is hidden */
+}
+.card-color2 {
+    background-color: #E4DAEB;
+    width: 100%;
+    height: calc(100vh - 200px);
+}
+
+.card-color1::before {
+    content: '';
+    position: absolute;
+    top: -216.48px; /* Y position */
+    left: -676px; /* X position */
+    width: 2791.92px; /* Width */
+    height: 925.36px; /* Height */
+    background: url('path/to/your/vector-image.png') no-repeat center center;
+    background-size: cover;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    top: 150px; /* Adjust to your preference */
+    z-index: 1;
+}
+.card-header h1 {
+    display: inline;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #301934;
+    padding: 15px;
+}
+.card-header svg{
+    font-size: 30px;
+    
+}
+.card-body {
+    margin-top: 20px;
+}
+.card-title {
+    display: flex;
+    align-items: center; /* Vertically align items in the center */
+    justify-content: space-between;
+}
+span{
+    cursor: pointer;
+}
+.card-title h3 {
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.card-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0 20px;
+}
+.card-choice {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px; 
+}
+
+.card-choice h3 {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.material-symbols-outlined {
+    font-size: 1.5em; 
+    color: purple;
+    cursor: pointer;
+}
+
+.card-choice hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
